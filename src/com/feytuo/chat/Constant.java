@@ -16,6 +16,7 @@ package com.feytuo.chat;
  * 常量类
  * @author feytuo
  *
+ *   2015-1-19
  */
 public class Constant {
 	public static final String NEW_FRIENDS_USERNAME = "item_new_friends";
