@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/index_topic_common_selector"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/index_topic_top_layout"
+        android:layout_width="match_parent"
+        android:background="@drawable/index_topic_common_selector"
+        android:clickable="true"
+        android:layout_height="40dp" >
+
+        <TextView
+            android:id="@+id/index_topic_user_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left_right"
+            android:text="方言话题"
+            android:textColor="@color/indexbg"
+            android:textSize="18.0sp" />
+
+        <ImageView
+            android:layout_width="12.0dip"
+            android:layout_height="12.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16.0dip"
+            android:src="@drawable/into_icon" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/weibo_unline" />
+
+    <TextView
+        android:id="@+id/index_topic_text_describe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4.0dip"
+        android:layout_marginLeft="@dimen/margin_left_right"
+        android:layout_marginRight="@dimen/margin_left_right"
+        android:layout_marginTop="10.0dip"
+        android:text="今天的天气还不错哦"
+        android:textColor="@color/black"
+        android:textSize="16.0sp" />
+
+    <ImageView
+        android:id="@+id/index_topic_progressbar_top_img"
+        android:layout_width="match_parent"
+        android:layout_height="6.0dip"
+        android:layout_marginLeft="@dimen/margin_left_right"
+        android:layout_marginRight="@dimen/margin_left_right"
+        android:background="@drawable/music_bg_top" />
+
+    <RelativeLayout
+        android:id="@+id/index_topic_progressbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40.0dip"
+        android:layout_marginBottom="8.0dip"
+        android:layout_marginLeft="@dimen/margin_left_right"
+        android:layout_marginRight="@dimen/margin_left_right"
+        android:background="@drawable/music_bg_button"
+        android:clickable="true" >
+
+        <ImageButton
+            android:id="@+id/index_topic_progressbar_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16.0dip"
+            android:background="@drawable/musicplayone"
+            android:clickable="false" />
+
+        <TextView
+            android:id="@+id/index_topic_progressbar_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16.0dip"
+            android:text="32s"
+            android:textColor="@color/indexbg"
+            android:textSize="12.0sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/index_bottom_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="36dip"
+        android:background="@color/topic_index_bg"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="36dip"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/index_topic_locals_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.0dip"
+                android:text="2014-10-24 00:00"
+                android:textColor="@color/newtime"
+                android:textSize="@dimen/text_time_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/index_topic_support_linerlayout"
+            android:layout_width="0dip"
+            android:layout_height="36dip"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <ImageButton
+                android:id="@+id/support_topic_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/support_no"
+                android:clickable="false" />
+
+            <TextView
+                android:id="@+id/index_topic_support_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dip"
+                android:clickable="false"
+                android:text="赞"
+                android:textColor="@color/newtime"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/index_topic_comment_linerlayout"
+            android:layout_width="0dip"
+            android:layout_height="36dip"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <ImageButton
+                android:id="@+id/comment_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/comment_selector"
+                android:clickable="false" />
+
+            <TextView
+                android:id="@+id/index_topic_comment_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dip"
+                android:clickable="false"
+                android:text="评论"
+                android:textColor="@color/newtime"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/index_topic_share_linerlayout"
+            android:layout_width="0dip"
+            android:layout_height="36dip"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/share_selector"
+                android:clickable="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dip"
+                android:clickable="false"
+                android:text="分享"
+                android:textColor="@color/newtime"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="16.0dip"
+            android:layout_height="36dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/viewone3dhight" />
+
+    <include layout="@layout/viewtenhight" />
+    <!-- 让布局有一个立体的效果 -->
+
+</LinearLayout>

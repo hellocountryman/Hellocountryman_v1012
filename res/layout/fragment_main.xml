@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/weibo_unline"
+    android:orientation="vertical" >
+
+    <com.feytuo.listviewonload.ZrcListView
+        android:id="@+id/index_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:divider="@color/weibo_unline"
+        android:scrollbars="none" />
+    <!-- start -->
+
+    <RelativeLayout
+        android:id="@+id/index_title_relactivelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_hight"
+        android:background="@color/indexbg" >
+
+        <ImageView
+            android:id="@+id/index_ico_img"
+            android:layout_width="@dimen/headico"
+            android:layout_height="@dimen/headico"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8.0dip"
+            android:background="@drawable/title_ic_launcher"
+            android:contentDescription="@string/app_name"
+            android:padding="8.0dip" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/title_hight"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_8dip"
+            android:layout_toRightOf="@+id/index_ico_img"
+            android:gravity="center_vertical"
+            android:text="首页"
+            android:textColor="@color/white"
+            android:textSize="@dimen/city_text_size" />
+
+        <Button
+            android:id="@+id/index_select_city"
+            android:layout_width="@dimen/title_hight"
+            android:layout_height="@dimen/title_hight"
+            android:background="@drawable/common_tab_bg"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="筛选"
+            android:textColor="@color/white"
+            android:textSize="16.0sp" />
+    </RelativeLayout>
+
+    <!-- end -->
+    <ImageView 
+        android:id="@+id/main_no_invitation_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:background="@drawable/no_invitation_bg"
+        />
+
+</RelativeLayout>

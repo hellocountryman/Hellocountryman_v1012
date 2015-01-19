@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/weibo_unline"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/weibo_unline"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/person_info_rela"
+            android:layout_width="match_parent"
+            android:layout_height="200dip"
+            android:background="@drawable/person_head_bg"
+            android:clickable="true" >
+
+            <ImageView
+                android:contentDescription="@string/app_name"
+                android:id="@+id/person_head_img"
+                android:layout_width="68dp"
+                android:layout_height="68dip"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/person_head_nick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/person_head_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16.0dip"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/weibo_unline" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/person_nick_rela"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:background="@drawable/common_selector"
+                android:clickable="true" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16.0dip"
+                    android:text="@string/nick"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/find_text_size" />
+
+                <TextView
+                    android:id="@+id/person_nick_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16.0dip"
+                    android:layout_marginRight="40.0dip"
+                    android:textColor="@color/head_color"
+                    android:textSize="14sp" />
+
+                <include layout="@layout/viewintimg" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/weibo_unline_3d" />
+
+            <RelativeLayout
+                android:id="@+id/person_sign_rela"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:background="@drawable/common_selector"
+                android:clickable="true" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16.0dip"
+                    android:text="@string/visa"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/find_text_size" />
+
+                <TextView
+                    android:id="@+id/person_sign_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="60.0dip"
+                    android:layout_marginRight="40.0dip"
+                    android:text="@string/goodstudy"
+                    android:textColor="@color/head_color"
+                    android:textSize="14sp" />
+
+                <include layout="@layout/viewintimg" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/weibo_unline_3d" />
+
+            <RelativeLayout
+                android:id="@+id/person_home_rela"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:background="@drawable/common_selector"
+                android:clickable="true" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16.0dip"
+                    android:text="@string/home"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/find_text_size" />
+
+                <TextView
+                    android:id="@+id/person_home_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16.0dip"
+                    android:layout_marginRight="40.0dip"
+                    android:textColor="@color/head_color"
+                    android:textSize="14sp" />
+
+                <include layout="@layout/viewintimg" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/weibo_unline_3d" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/weibo_unline" />
+
+            <RelativeLayout
+                android:id="@+id/person_tiezi_rela"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:background="@drawable/common_selector"
+                android:clickable="true" >
+
+                <include layout="@layout/viewintimg" />
+
+                <ImageView
+                    android:id="@+id/person_red_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="40dp"
+                    android:contentDescription="@string/app_name"
+                    android:background="@drawable/redpoint"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16.0dip"
+                    android:text="@string/my_tiezi"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/find_text_size" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/weibo_unline_3d" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/weibo_unline" />
+
+            <RelativeLayout
+                android:id="@+id/person_set_rela"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:background="@drawable/common_selector"
+                android:clickable="true" >
+
+                <include layout="@layout/viewintimg" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16.0dip"
+                    android:text="@string/setting"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/find_text_size" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/weibo_unline_3d" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/weibo_unline" />
+
+            
+            <RelativeLayout
+                android:id="@+id/person_about_rela"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:background="@drawable/common_selector"
+                android:clickable="true" >
+
+                <include layout="@layout/viewintimg" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16.0dip"
+                    android:text="@string/about_xiangxiang"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/find_text_size" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/weibo_unline_3d" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

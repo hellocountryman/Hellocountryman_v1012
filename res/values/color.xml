@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="translucent"> #e0000000</color>
+    <!-- 半透明 -->
+    <color name="white">#ffffff</color>
+    <!-- 白色 -->
+    <color name="light_gray">#f3f3f3</color>
+    <!-- 淡灰 -->
+    <color name="yellow">#ffff00</color>
+    <!-- 黄色 -->
+    <color name="orange">#ffa500</color>
+    <!-- 橙色 -->
+    <color name="grey">#808080</color>
+    <!-- 灰色 -->
+    <color name="green">#008000</color>
+    <!-- 绿色 -->
+    <color name="blue">#0000ff</color>
+    <color name="thinbule">#7DC7E9</color>
+    <!-- 蓝色 -->
+    <color name="black">#000000</color>
+    <color name="comment_hint">#92b1cd</color>
+    <!-- 黑色 -->
+    
+    <color name="red" type="drawable">#fc0303</color>
+    <color name="head_color">#676767</color>
+    <!-- app话题色 -->
+    <color name="topic_index_bg">#cbe5f1</color>
+    <!-- app主题色 -->
+    <color name="indexbg">#00a0e9</color>
+    <!-- 00a0e9,fe6b75,f3f3f3,e6dfd5,F25D33 -->
+    <!-- app主题pressed颜色 -->
+    <color name="indexbg_pressed">#006c9e</color>
+     <!-- 没有点击的效果按钮 -->
+    <color name="button_no">#9d9d9d</color>
+    
+    <!-- 一般的问题内容颜色，不为黑 -->
+    <color name="content_color">#1C2B35</color>
+
+    <!-- 微博的itme与item的间距)颜色 -->
+    <color name="weibo_unline">#EDEDED</color>
+    <color name="weibo_unline_3d">#D4D0D0</color>
+    <!-- 评论和点赞的数目文字 -->
+    <color name="text_num_color">#707070</color>
+    <!-- 时间的颜色 -->
+    <color name="text_time_color">#afafaf</color>
+    <!-- 发布按钮不可用 -->
+    <color name="publish_btn_no_color">#92dafb</color>
+    <!-- 热门颜色 -->
+    <color name="vifrification">#00000000</color>
+    <!-- 热门颜色 -->
+    <color name="hot">#ff0000</color>
+    <color name="newtime">#bebebe</color>
+    <!-- Copyright -->
+    <color name="copyright">#787878</color>
+    <color name="common_top_bar_blue">#4ebcd3</color>
+    <color name="btn_login_normal">#007086</color>
+    <color name="btn_login_pressed">#303744</color>
+    <color name="btn_logout_normal">#d33f3f</color>
+    <color name="btn_logout_pressed">#DA5A4D</color>
+    <color name="btn_register_normal">#2dafa3</color>
+    <color name="btn_register_pressed">#4ebcd3</color>
+    <color name="common_bottom_bar_normal_bg">#2d2f31</color>
+    <color name="common_bottom_bar_selected_bg">#161718</color>
+    <color name="common_botton_bar_blue">#2ea7e0</color>
+    <color name="common_bg">#fcfcfc</color>
+    <color name="btn_pressed_green_solid">#B6DA53</color>
+    <color name="divider_list">#cccccc</color>
+    <color name="top_bar_normal_bg">#4ebcd3</color>
+    <color name="error_item_color">#F6EBE6</color>
+    <color name="bottom_bar_normal_bg">#2D2F31</color>
+    <color name="bottom_text_color_normal">#ffffff</color>
+    <color name="btn_white_normal">#f7f8f8</color>
+    <color name="btn_white_pressed">#b5b5b6</color>
+    <color name="btn_green_noraml">#68C270</color>
+    <color name="btn_green_pressed">#6FCD78</color>
+    <color name="btn_gray_normal">#c0c0c0</color>
+    <color name="btn_gray_pressed_status">#b5b5b6</color>
+    <color name="btn_gray_pressed">#666667</color>
+    <color name="btn_blue_normal">#1e90ff</color>
+    <color name="btn_blue_pressed">#0066FF</color>
+    <color name="gray_pressed">#b5b5b6</color>
+    <color name="gray_normal">#666667</color>
+    <color name="grid_state_pressed">#1Affffff</color>
+    <color name="grid_state_focused">#80000000</color>
+    <color name="voip_interface_text_color">#bababa</color>
+    <color name="black_deep">#FF000000</color>
+
+</resources>

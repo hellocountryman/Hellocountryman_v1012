@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/weibo_unline"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_hight"
+        android:background="@color/indexbg" >
+
+        <RelativeLayout
+            android:id="@+id/publish_return_relative"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/title_hight"
+            android:layout_centerVertical="true"
+            android:background="@drawable/return_head_common_selector"
+            android:clickable="true"
+            android:onClick="publishReturnRelative" >
+
+            <Button
+                android:id="@+id/return_button_id"
+                android:layout_width="48.0dip"
+                android:layout_height="48.0dip"
+                android:layout_centerVertical="true"
+                android:background="@drawable/return_selector"
+                android:clickable="false" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/publish_type_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/publish_fangyang"
+            android:textColor="@color/white"
+            android:textSize="@dimen/city_text_size" />
+
+        <Button
+            android:id="@+id/publish_button"
+            android:layout_width="@dimen/title_hight"
+            android:layout_height="@dimen/title_hight"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/common_tab_bg"
+            android:text="@string/publish_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/city_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0.0dip"
+        android:layout_weight="4" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50.0dip"
+            android:background="@drawable/common_selector"
+            android:clickable="true"
+            android:onClick="setPosition" >
+
+            <ImageView
+                android:id="@+id/publish_title_img_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16.0dip"
+                android:background="@drawable/geographical"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:id="@+id/publish_title_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="8.0dip"
+                android:layout_toRightOf="@+id/publish_title_img_id"
+                android:text="@string/my_position"
+                android:textColor="@color/text_num_color"
+                android:textSize="16.0sp" />
+
+            <include layout="@layout/viewintimg" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/weibo_unline_3d" />
+
+        <RelativeLayout
+            android:id="@+id/publish_select_home_rela"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginTop="51.0dip"
+            android:background="@drawable/common_selector"
+            android:clickable="true" >
+
+            <include layout="@layout/viewintimg" />
+
+            <TextView
+                android:id="@+id/publish_myhome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16.0dip"
+                android:text="@string/my_fanyan"
+                android:textColor="@color/text_num_color"
+                android:textSize="@dimen/find_text_size" />
+
+            <TextView
+                android:id="@+id/publish_home_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/publish_myhome"
+                android:textColor="@color/text_num_color"
+                android:textSize="@dimen/find_text_size" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/weibo_unline_3d" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="110.0dip"
+            android:background="@color/white" >
+
+            <EditText
+                android:id="@+id/publish_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/corners_storke_weibo"
+                android:gravity="top"
+                android:hint="@string/describedrecord"
+                android:inputType="textMultiLine"
+                android:maxLength="42"
+                android:padding="16.0dip"
+                android:singleLine="false"
+                android:textColorHint="@color/newtime"
+                android:textSize="@dimen/find_text_size" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/publish_wordnum_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="16.0dip"
+            android:layout_marginRight="16dip"
+            android:layout_marginTop="110.0dip"
+            android:text="@string/maxmun"
+            android:textColor="@color/text_num_color" />
+
+        <LinearLayout
+            android:id="@+id/publish_recording_linear"
+            android:layout_width="200.0dip"
+            android:layout_height="200.0dip"
+            android:layout_centerInParent="true"
+            android:alpha="0.5"
+            android:background="@drawable/corners_blackbg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/publish_recording_img"
+                android:layout_width="100.0dip"
+                android:layout_height="100.0dip"
+                android:background="@drawable/comment_record_hint_one"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16.0dip"
+                android:text="@string/cilckstoprecord"
+                android:textColor="@color/common_bg" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/weibo_unline" />
+
+    <LinearLayout
+        android:id="@+id/comment_record_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="4"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/progressbar_id"
+                android:layout_width="100.0dip"
+                android:layout_height="100.0dip"
+                android:layout_centerInParent="true"
+                android:background="@drawable/comment_record_no" />
+
+            <ImageView
+                android:id="@+id/publish_play_record_imgbutton"
+                android:layout_width="100.0dip"
+                android:layout_height="100.0dip"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/app_name"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/publish_rerecord_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="128dp"
+                android:layout_toRightOf="@id/progressbar_id"
+                android:background="@drawable/rerecord_selector"
+                android:contentDescription="@string/app_name"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/publish_record_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="128dp"
+                android:layout_toLeftOf="@id/progressbar_id"
+                android:textColor="@color/comment_hint"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/publish_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/progressbar_id"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="64.0dip"
+                android:text="@string/cilck_record"
+                android:textColor="@color/comment_hint" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

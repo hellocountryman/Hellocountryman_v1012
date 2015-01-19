@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/catalog"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_marginLeft="16.0dip"
+        android:layout_weight="1.0"
+        android:paddingBottom="5dip"
+        android:paddingLeft="5dip"
+        android:paddingTop="5dip"
+        
+        android:textColor="@color/indexbg"
+        android:textSize="@dimen/city_list_size" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/index_common_selector"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="16.0dip"
+            android:layout_height="16.0dip" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:textColor="@color/black"
+            android:textSize="@dimen/city_list_size" />
+    </LinearLayout>
+
+    <include layout="@layout/viewonehight" />
+
+</LinearLayout>

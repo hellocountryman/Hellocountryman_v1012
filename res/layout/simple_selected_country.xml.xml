@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/select_city_bg"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_horizontal"
+	    android:orientation="vertical"
+	    android:layout_marginBottom="30dp"
+	    >
+	    <EditText 
+	        android:id="@+id/login_name_ev"
+	        android:layout_width="200dp"
+	        android:layout_height="wrap_content"
+	        android:inputType="number"
+	        android:hint="请输入用户名"/>
+	    <EditText 
+	        android:id="@+id/login_pwd_ev"
+	        android:layout_width="200dp"
+	        android:layout_height="wrap_content"
+	        android:inputType="textPassword"
+	        android:hint="请输入密码"/>
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal">
+	        <Button 
+	            android:id="@+id/login_btn"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginRight="30dp"
+	            android:onClick="appLogin"
+	            android:text="登录"/>
+	        <Button 
+	            android:id="@+id/register_btn"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:onClick="appLogin"
+	            android:text="注册"/>
+	    </LinearLayout>
+	</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/login_qq_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/login_qq_selector"
+            android:contentDescription="@string/app_name"
+            android:onClick="appLogin" />
+
+        <ImageButton
+            android:id="@+id/login_sina_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_sina_selector"
+            android:contentDescription="@string/app_name"
+            android:onClick="appLogin" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="70dp"
+            android:textColor="@color/indexbg"
+             android:text="QQ登录"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="微博登录"
+            android:textColor="@color/indexbg" />
+    </LinearLayout>
+
+</LinearLayout>

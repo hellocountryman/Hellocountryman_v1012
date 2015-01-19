@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_hight"
+        android:background="@color/indexbg" >
+
+        <Button
+            android:id="@+id/select_country_return_btn"
+            android:layout_width="48.0dip"
+            android:layout_height="48.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/return_selector"
+            android:onClick="selectcityret"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/title_text_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_text_size" />
+    </RelativeLayout>
+
+    <com.feytuo.laoxianghao.sortlistview.ClearEditText
+        android:id="@+id/filter_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="30.0dip"
+        android:layout_margin="8.0dip"
+        android:background="@drawable/corners_storke_indexbg"
+        android:drawableLeft="@drawable/search_bar_icon_normal"
+        android:hint="@string/inputkey"
+        android:paddingLeft="8.0dip"
+        android:singleLine="true"
+        android:textSize="15.0dip" />
+
+    <LinearLayout
+        android:id="@+id/hotcitylinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4.0dip"
+            android:layout_marginLeft="8.0dip"
+            android:text="@string/hot_city" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginRight="8.0dip"
+            android:background="@color/weibo_unline_3d" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/select_city_hot_0"
+                android:layout_width="0.0dip"
+                android:layout_height="30dip"
+                android:layout_margin="8.0dip"
+                android:layout_weight="1"
+                android:background="@drawable/corners_storke_indexbg"
+                android:text="@string/all"
+                android:textColor="@color/black"
+                android:textSize="12.0sp" />
+            <Button
+                android:id="@+id/select_city_hot_1"
+                android:layout_width="0.0dip"
+                android:layout_height="30dip"
+                android:layout_margin="8.0dip"
+                android:layout_weight="1"
+                android:background="@drawable/corners_storke_indexbg"
+                android:text="@string/beijing"
+                android:textColor="@color/black"
+                android:textSize="12.0sp" />
+
+            <Button
+                android:id="@+id/select_city_hot_2"
+                android:layout_width="0.0dip"
+                android:layout_height="30dip"
+                android:layout_margin="8.0dip"
+                android:layout_weight="1"
+                android:background="@drawable/corners_storke_indexbg"
+                android:onClick="indexSelectCity"
+                android:text="@string/mychangsha"
+                android:textColor="@color/black"
+                android:textSize="12.0sp" />
+
+            <Button
+                android:id="@+id/select_city_hot_3"
+                android:layout_width="0.0dip"
+                android:layout_height="30dip"
+                android:layout_margin="8.0dip"
+                android:layout_weight="1"
+                android:background="@drawable/corners_storke_indexbg"
+                android:onClick="indexSelectCity"
+                android:text="@string/guangzhou"
+                android:textColor="@color/black"
+                android:textSize="12.0sp" />
+
+            <Button
+                android:id="@+id/select_city_hot_4"
+                android:layout_width="0.0dip"
+                android:layout_height="30dip"
+                android:layout_margin="8.0dip"
+                android:layout_weight="1"
+                android:background="@drawable/corners_storke_indexbg"
+                android:onClick="indexSelectCity"
+                android:text="@string/chengdu"
+                android:textColor="@color/black"
+                android:textSize="12.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4.0dip"
+        android:layout_marginLeft="8.0dip"
+        android:text="@string/allcity" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginRight="8.0dip"
+        android:background="@color/weibo_unline_3d" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white" >
+
+        <ListView
+            android:id="@+id/country_lvcountry"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:divider="@null" />
+
+        <TextView
+            android:id="@+id/dialog"
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/indexbg"
+            android:textSize="30.0dip"
+            android:visibility="invisible" />
+
+        <com.feytuo.laoxianghao.sortlistview.SideBar
+            android:id="@+id/sidrbar"
+            android:layout_width="30.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|center" />
+    </FrameLayout>
+
+</LinearLayout>

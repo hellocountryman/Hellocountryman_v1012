@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200.0dip"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40.0dip"
+        android:gravity="center" >
+
+        <TextView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/position_choose_dialog"
+            android:textColor="@color/black"
+            android:textSize="@dimen/city_text_size" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="@color/weibo_unline_3d" />
+
+    <ListView
+        android:id="@+id/position_choose_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/weibo_unline"
+        android:dividerHeight="1.0dip"
+        android:scrollbars="none" >
+    </ListView>
+
+</LinearLayout>

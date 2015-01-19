@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="8.0dip" />
+
+                <gradient
+                    android:angle="270.0"
+                    android:centerColor="#3DB6EE"
+                    android:endColor="#A5DFF9"
+                    android:startColor="@color/indexbg" />
+            </shape>
+        </clip>
+    </item>
+</layer-list><!--
+//android:startColor="@color/red" 为自定义开始颜色
+//<corners android:radius="0.0dip" /> 为两头圆角的弧度，值越大越圆
+//<gradient > 为设置渐变色背景 angle 为角度，必须是45的倍数
+-->

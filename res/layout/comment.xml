@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/weibo_unline"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_hight"
+        android:background="@color/indexbg" >
+
+        <Button
+            android:id="@+id/comment_return_button_id"
+            android:layout_width="48.0dip"
+            android:layout_height="48.0dip"
+            android:layout_centerVertical="true"
+            android:background="@drawable/return_selector"
+            android:onClick="commentReturnRelative" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/comment"
+            android:textColor="@color/white"
+            android:textSize="@dimen/city_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="12.0"
+        android:orientation="vertical" >
+
+        <com.feytuo.listviewonload.XListView
+            android:id="@+id/comment_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/weibo_unline"
+            android:dividerHeight="1.0dip"
+            android:scrollbars="none" >
+        </com.feytuo.listviewonload.XListView>
+
+        <LinearLayout
+            android:id="@+id/comment_recording_linear"
+            android:layout_width="200.0dip"
+            android:layout_height="200.0dip"
+            android:layout_centerInParent="true"
+            android:alpha="0.5"
+            android:background="@drawable/corners_blackbg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/comment_recording_img"
+                android:layout_width="100.0dip"
+                android:layout_height="100.0dip"
+                android:background="@drawable/comment_record_hint_one"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16.0dip"
+                android:text="@string/stoprecord"
+                android:textColor="@color/common_bg" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/weibo_unline_3d" />
+
+    <LinearLayout
+        android:id="@+id/comment_edit_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/comment_add_img"
+            android:layout_width="30.0dip"
+            android:layout_height="30.0dip"
+            android:layout_margin="8.0dip"
+            android:background="@drawable/chatting_setmode_voice_btn"
+            android:contentDescription="@string/app_name" />
+
+        <EditText
+            android:id="@+id/comment_text_edit"
+            android:layout_width="0dp"
+            android:layout_height="30.0dip"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="5"
+            android:background="@drawable/corners_storke_edit_no"
+            android:inputType="textMultiLine"
+            android:padding="3dp"
+            android:singleLine="false" />
+
+        <Button
+            android:id="@+id/comment_comment_btn"
+            android:layout_width="60.0dip"
+            android:layout_height="30.0dip"
+            android:layout_margin="8dp"
+            android:background="@drawable/corners_storke_edit_no"
+            android:text="@string/comment"
+            android:textColor="@color/button_no"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/comment_record_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="200.0dip"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/comment_record_btn"
+                android:layout_width="100.0dip"
+                android:layout_height="100.0dip"
+                android:layout_centerInParent="true"
+                android:background="@drawable/comment_record_no" />
+
+            <ImageButton
+                android:id="@+id/comment_play_record_imgbutton"
+                android:layout_width="100.0dip"
+                android:layout_height="100.0dip"
+                android:layout_centerInParent="true"
+                android:background="@drawable/play_ico"
+                android:contentDescription="@string/app_name"
+                android:visibility="gone" />
+
+            <ImageView
+                android:contentDescription="@string/app_name"
+                android:id="@+id/comment_rerecord_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="128dp"
+                android:layout_toRightOf="@+id/comment_record_btn"
+                android:background="@drawable/rerecord_selector" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/comment_record_hint_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="16.0dip"
+            android:text="@string/press_record"
+            android:textColor="@color/comment_hint" />
+    </LinearLayout>
+
+</LinearLayout>
